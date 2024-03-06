@@ -1,0 +1,17 @@
+1707890514926	geckodriver	INFO	Listening on 127.0.0.1:56453
+1707890514966	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "35147" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileDmX258"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1707890516084	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1707890516272	Marionette	INFO	Listening on port 46603
+Read port: 46603
+WebDriver BiDi listening on ws://127.0.0.1:35147
+1707890516559	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:35147/devtools/browser/b68a5a4f-7430-4afb-96e1-ff176f8234e7
+console.error: (new TypeError("this._searchProviderInfo is null", "resource:///modules/SearchSERPTelemetry.sys.mjs", 743))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.way2automation.com."
+console.warn: FormAutofillHandler: isRecordCreatable: Country not supported: India
+1707890531703	Marionette	INFO	Stopped listening on port 46603

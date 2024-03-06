@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.8.10 on linux)" generated="2024-02-14T11:34:18.960386" rpa="false" schemaversion="5">
+<suite id="s1" name="Open" source="/home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Get prod names amazon automation/Open.robot">
+<test id="s1-t1" name="first test case" line="5">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-14T11:34:19.131051" level="INFO">registration form</msg>
+<arg>registration form</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-14T11:34:19.130722" elapsed="0.000430"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-14T11:34:19.131735" level="INFO">Opening browser 'Firefox' to base url 'https://www.way2automation.com/way2auto_jquery/index.php'.</msg>
+<arg>https://www.way2automation.com/way2auto_jquery/index.php</arg>
+<arg>Firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-14T11:34:19.131488" elapsed="7.953545"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-14T11:34:27.087032" level="INFO">Typing text 'Devarshi pandya' into text field 'name:name'.</msg>
+<arg>name:name</arg>
+<arg>Devarshi pandya</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-14T11:34:27.086004" elapsed="0.240337"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-14T11:34:27.327428" level="INFO">Typing text '9408518516' into text field 'name:phone'.</msg>
+<arg>name:phone</arg>
+<arg>9408518516</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-14T11:34:27.326959" elapsed="0.109802"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-14T11:34:27.437666" level="INFO">${random} = 7</msg>
+<var>${random}</var>
+<arg>random.randint(0,10)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-14T11:34:27.437150" elapsed="0.000598"/>
+</kw>
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-02-14T11:34:27.438504" level="INFO">${email} = 7de sas @gmail.com</msg>
+<var>${email}</var>
+<arg>${random}de sas @gmail.com</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2024-02-14T11:34:27.438087" elapsed="0.000466"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-14T11:34:27.439744" level="INFO">${email2} = 7de_sas_@gmail.com</msg>
+<var>${email2}</var>
+<arg>'${email}'.replace(' ','_')</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-14T11:34:27.439073" elapsed="0.000758"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-14T11:34:27.441005" level="INFO">Typing text '7de_sas_@gmail.com' into text field 'name:email'.</msg>
+<arg>name:email</arg>
+<arg>${email2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-14T11:34:27.440384" elapsed="0.090707"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-02-14T11:34:27.532289" level="INFO">Selecting options from selection list 'name:country' by label India.</msg>
+<arg>name:country</arg>
+<arg>India</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-02-14T11:34:27.531750" elapsed="0.076928"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-14T11:34:27.613370" level="INFO">Typing text 'Delhi' into text field 'name=city'.</msg>
+<arg>name=city</arg>
+<arg>Delhi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-14T11:34:27.610205" elapsed="0.042488"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-14T11:34:27.653534" level="INFO">Typing text 'devarshi.pandya' into text field 'xpath:(//input[@name='username'])[2]'.</msg>
+<arg>xpath:(//input[@name='username'])[2]</arg>
+<arg>devarshi.pandya</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-14T11:34:27.653140" elapsed="0.070655"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-14T11:34:27.725476" level="INFO">Typing text 'Devarshi.pandya' into text field 'xpath:(//input[@name='password'])[2]'.</msg>
+<arg>xpath:(//input[@name='password'])[2]</arg>
+<arg>Devarshi.pandya</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-14T11:34:27.724961" elapsed="0.128587"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-14T11:34:27.854459" level="INFO">Clicking element '//*[@type="submit"]'.</msg>
+<msg time="2024-02-14T11:34:28.166492" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-14T11:34:28.166922" level="FAIL">ElementNotInteractableException: Message: Element &lt;input class="button" type="submit"&gt; could not be scrolled into view
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:191:5
+ElementNotInteractableError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:351:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:166:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:135:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:204:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:84:31
+</msg>
+<arg>//*[@type="submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-02-14T11:34:27.854028" elapsed="0.315017">ElementNotInteractableException: Message: Element &lt;input class="button" type="submit"&gt; could not be scrolled into view
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:191:5
+ElementNotInteractableError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:351:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:166:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:135:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:204:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:84:31
+</status>
+</kw>
+<status status="FAIL" start="2024-02-14T11:34:19.129629" elapsed="9.040113">ElementNotInteractableException: Message: Element &lt;input class="button" type="submit"&gt; could not be scrolled into view
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:191:5
+ElementNotInteractableError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:351:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:166:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:135:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:204:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:84:31
+</status>
+</test>
+<status status="FAIL" start="2024-02-14T11:34:18.962385" elapsed="9.208896"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Open">Open</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

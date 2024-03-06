@@ -1,0 +1,14 @@
+1707890659236	geckodriver	INFO	Listening on 127.0.0.1:56107
+1707890659248	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "35513" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileBFeMBg"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1707890660164	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1707890660352	Marionette	INFO	Listening on port 37611
+WebDriver BiDi listening on ws://127.0.0.1:35513
+Read port: 37611
+1707890660919	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:35513/devtools/browser/bc003b85-d8b5-4c2a-859f-538bde3ff33e
+1707890672916	Marionette	INFO	Stopped listening on port 37611
